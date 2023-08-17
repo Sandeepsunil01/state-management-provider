@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 
 // Without Statemangament Solution
 // Passing data top widget to the bottom of the widget
-class ProviderOverview01State extends StatefulWidget {
-  const ProviderOverview01State({super.key});
+class ProviderOverview01 extends StatefulWidget {
+  const ProviderOverview01({super.key});
 
   @override
-  State<ProviderOverview01State> createState() =>
-      ProviderOverview01StateState();
+  State<ProviderOverview01> createState() => ProviderOverview01State();
 }
 
-class ProviderOverview01StateState extends State<ProviderOverview01State> {
+class ProviderOverview01State extends State<ProviderOverview01> {
   int counter = 0;
 
   void increment() {
