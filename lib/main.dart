@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<Dog>(
-      create: (context) => Dog(name: "Dog-04", breed: "Breed-04"),
+      create: (context) => Dog(name: "Dog-05", breed: "Breed-05", age: 3),
       child: MaterialApp(
         title: 'State Management with Provider',
         debugShowCheckedModeBanner: false,
