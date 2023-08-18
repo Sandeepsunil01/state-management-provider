@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Dog {
   final String name;
   final String breed;
@@ -8,4 +10,9 @@ class Dog {
     required this.breed,
     this.age = 1,
   });
+
+  void grow() {
+    age++;
+    debugPrint("Age == $age");
+  }
 }

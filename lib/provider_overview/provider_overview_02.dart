@@ -65,6 +65,14 @@ class Age extends StatelessWidget {
           " - age: ${Provider.of<Dog>(context).age}",
           style: const TextStyle(fontSize: 20),
         ),
+        const SizedBox(height: 20),
+        ElevatedButton(
+          onPressed: () => Provider.of<Dog>(context, listen: false).grow(),
+          child: const Text(
+            "Gow",
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
       ],
     );
   }
