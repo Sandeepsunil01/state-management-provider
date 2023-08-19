@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:state_management/models/cat.dart';
 import 'package:state_management/models/dog.dart';
-import 'package:state_management/provider_overview/provider_overview_06.dart';
+import 'package:state_management/provider_overview/provider_overview_07.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +26,14 @@ class MyApp extends StatelessWidget {
             return cats.getCatsAge();
           },
         ),
+        StreamProvider<String>(
+          initialData: 'Bark 0 times',
+          create: (context) {
+            final int dogAge = context.read<Dog>().age;
+            final cats = Cats(age: dogAge * 2);
+            return cats.bark();
+          },
+        ),
       ],
       child: MaterialApp(
         title: 'State Management with Provider',
@@ -34,7 +42,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ProviderOverview06(),
+        home: const ProviderOverview07(),
       ),
     );
   }
