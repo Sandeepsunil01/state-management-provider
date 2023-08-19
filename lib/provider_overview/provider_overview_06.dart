@@ -16,7 +16,7 @@ class _ProviderOverview06State extends State<ProviderOverview06> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Multi Provider"),
+        title: const Text("Multi Provider & Future Provider"),
       ),
       body: Center(
         child: Column(
