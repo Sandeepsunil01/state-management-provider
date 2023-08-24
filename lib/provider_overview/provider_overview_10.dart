@@ -15,7 +15,7 @@ class _ProviderOverview10State extends State<ProviderOverview10> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Consumer Overview"),
+        title: const Text("Selector Overview"),
       ),
       body: Selector<Dog, String>(
         selector: (BuildContext context, Dog dog) => dog.name,
