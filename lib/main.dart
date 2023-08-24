@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'provider_overview/provider_overview_11.dart';
+import 'package:provider/provider.dart';
+import 'provider_overview/provider_overview_12.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ProviderOverview11(),
+      home: ChangeNotifierProvider<Counter>(
+        create: (context) => Counter(),
+        child: const ProviderOverview12(),
+      ),
     );
   }
 }
