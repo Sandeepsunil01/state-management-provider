@@ -1,0 +1,7 @@
+Provider Overview
+
+Provider = Provider.of<Type>(context)
+ChangeNotifierProvider = Provider.of<Type>(context, listen: false)
+MultiProvider = context.read<Type>();
+FutureProvider = context.watch<Type>();
+StreamProvider = context.select<Type, Read>(R selector(Type value));
