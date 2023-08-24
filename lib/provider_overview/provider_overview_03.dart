@@ -87,7 +87,7 @@ class Age extends StatelessWidget {
         ElevatedButton(
           onPressed: () => dog.grow(),
           child: const Text(
-            "Gow",
+            "Grow",
             style: TextStyle(fontSize: 20),
           ),
         ),
