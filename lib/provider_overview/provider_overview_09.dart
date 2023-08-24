@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 // There may be times when we get Provider Not Found
-// There may be 3 possinle solutions
-// 1. Add the Providet up the widget tree,
+// There may be 3 possible solutions
+// 1. Add the Provider up the widget tree,
 // 2. Use Builder instead of child
 // 3. Use Consumer instead of direct builder
 
