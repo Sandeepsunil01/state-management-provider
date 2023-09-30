@@ -17,6 +17,7 @@ import 'package:flutter/material.dart';
 import 'package:state_management/screen/proxy_provider_update.dart';
 
 import '../screen/chgnotifier_chgnotifierproxy.dart';
+import '../screen/chnagenotioprov_proxyprov.dart';
 import '../screen/proxy_provider_create_update.dart';
 import '../screen/proxyprov_proxyprov.dart';
 import '../screen/why_proxy_provider.dart';
@@ -118,7 +119,8 @@ class _ProviderOverview15State extends State<ProviderOverview15> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const WhyProxyProvider()));
+                          builder: (context) =>
+                              const ChangeNotifierProxyProvider()));
                 },
                 child: const Text(
                   "ChangeNotifierProvider\nProxyProvider",
