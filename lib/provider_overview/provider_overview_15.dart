@@ -2,7 +2,7 @@
 // When a CounterProvider needs the value of a ColorProvider
 // A Provider that build a value based on other providers
 
-// When to use proxy-provider and when to use ChangeNotifierProxyProvider?
+// When to use proxyprovider and when to use ChangeNotifierProxyProvider?
 
 // What are the best practices for use?
 

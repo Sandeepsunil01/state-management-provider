@@ -1,3 +1,6 @@
+// Creates a value based on other values
+// Create is called only once and update can be called multiple times.
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
