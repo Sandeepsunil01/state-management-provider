@@ -1,8 +1,8 @@
 // It takes little bit time to understand this ProxyProvider
 // When a CounterProvider needs the value of a ColorProvider
-// A Proivder that build a value based on other providers
+// A Provider that build a value based on other providers
 
-// When to use proxyprovider and when to use ChangeNotifierProxyProvider?
+// When to use proxy-provider and when to use ChangeNotifierProxyProvider?
 
 // What are the best practices for use?
 
@@ -104,7 +104,7 @@ class _ProviderOverview15State extends State<ProviderOverview15> {
                           builder: (context) => const WhyProxyProvider()));
                 },
                 child: const Text(
-                  "ChangeNotifierProxyProvider\nChnageNotifierProvider",
+                  "ChangeNotifierProxyProvider\nChangeNotifierProvider",
                   style: TextStyle(fontSize: 20),
                   textAlign: TextAlign.center,
                 ),
