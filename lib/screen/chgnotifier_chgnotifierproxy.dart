@@ -27,7 +27,9 @@ class ChangeNotifierChangeNotifierProxyProvider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Why Proxy Provider")),
+      appBar: AppBar(
+          title:
+              const Text("Change Notifier and Change Notifier Proxy Provider")),
       body: Center(
         child: MultiProvider(
           providers: [

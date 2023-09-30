@@ -28,7 +28,7 @@ class _ProxyProvProxyProvState extends State<ProxyProvProxyProv> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Why Proxy Provider")),
+      appBar: AppBar(title: const Text("Proxy Provider Proxy Provider")),
       body: Center(
         child: MultiProvider(
           providers: [
