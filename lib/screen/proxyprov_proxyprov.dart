@@ -2,24 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Translations {
-  late int _value;
+  const Translations(this._value);
+  final int _value;
 
-  void update(int newValue) {
-    _value = newValue;
-  }
-
-  String get title => "You clicked $_value times";
+  String get title => 'You clicked $_value times';
 }
 
-class ProxyProviderCreateUpdate extends StatefulWidget {
-  const ProxyProviderCreateUpdate({super.key});
+class ProxyProvProxyProv extends StatefulWidget {
+  const ProxyProvProxyProv({super.key});
 
   @override
-  State<ProxyProviderCreateUpdate> createState() =>
-      _ProxyProviderCreateUpdateState();
+  State<ProxyProvProxyProv> createState() => _ProxyProvProxyProvState();
 }
 
-class _ProxyProviderCreateUpdateState extends State<ProxyProviderCreateUpdate> {
+class _ProxyProvProxyProvState extends State<ProxyProvProxyProv> {
   int counter = 0;
 
   void increment() {
@@ -32,14 +28,15 @@ class _ProxyProviderCreateUpdateState extends State<ProxyProviderCreateUpdate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Proxy Provider Create & Update")),
+      appBar: AppBar(title: const Text("Why Proxy Provider")),
       body: Center(
-        child: ProxyProvider0<Translations>(
-          create: (_) => Translations(),
-          update: (_, Translations? translations) {
-            translations!.update(counter);
-            return translations;
-          },
+        child: MultiProvider(
+          providers: [
+            ProxyProvider0<int>(update: (_, __) => counter),
+            ProxyProvider<int, Translations>(
+              update: (_, value, __) => Translations(value),
+            ),
+          ],
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
